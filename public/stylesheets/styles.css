@@ -1,0 +1,16 @@
+body {
+  background-color: #8B1511;
+  font-family: sans-serif;
+  color: #E9CB5B;
+
+}
+.container{
+  width: 800px;
+}
+
+.beers{
+  border: solid #E8BC1B 2px;
+  border-radius: 5px;
+  padding: 10px;
+
+}
