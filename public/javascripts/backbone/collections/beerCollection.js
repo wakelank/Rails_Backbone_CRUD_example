@@ -1,6 +1,6 @@
-var Beerapp = Beerapp || { Models: {}, Collection:{}, Views{}, };
+var Beerapp = Beerapp || { Models: {}, Collection: {}, Views: {}, };
 
-Beerapp.Collections.BeerColletion = Backbone.Collection.extend({
+Beerapp.Collections.BeerCollection = Backbone.Collection.extend({
   model: Beerapp.Models.Beer,
   url:'/beers'
 });

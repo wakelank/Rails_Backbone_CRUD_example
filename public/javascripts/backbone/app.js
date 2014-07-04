@@ -14,7 +14,7 @@ Beerapp.initialize = function(){
   $('.beers').find('form').on('submit', function(e){
       e.preventDefault();
       var beerName = $('input').val();
-      $('input'.val(''));
+      $('input').val('');
       collection.create({name: beerName })
   });
 

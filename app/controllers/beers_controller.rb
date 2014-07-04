@@ -10,7 +10,7 @@ class BeersController < ApplicationController
 
 
   def index
-    beer = Beer.all 
+    beers = Beer.all 
     render json: beers.to_json
   end
 
@@ -35,7 +35,11 @@ class BeersController < ApplicationController
     beer.destroy
     render json: beer.to_json
   end
+
+  private
+
+  def beer_params
+    params.require(:beer).permit(:name)
+  end
   
-
-
 end
