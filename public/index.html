@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+
+  <!--Libraries-->
+  <script type="text/javascript" src="javascripts/libraries/jquery.js"></script>
+  <script type="text/javascript" src="javascripts/libraries/underscore.js"></script>
+  <script type="text/javascript" src="javascripts/libraries/backbone.js"></script>
+
+  <!--Templates-->
+  <script type="text/template" class="beer-template">
+    Beer: <%= name %> 
+
+    <button data-action="destroy">
+      Delete
+    </button>
+
+    <button data-action="edit">
+      Edit
+    </button>
+
+  </script>
+
+  <!--app-->
+  <script type="text/javascript" src="javascripts/backbone/app.js"></script>
+
+  <!--Models-->
+  <script type="text/javascript" src="javascripts/backbone/models/beer.js"></script>
+
+  <!--Collections-->
+  <script type="text/javascript" src="javascripts/backbone/collections/beerCollection.js"></script>
+
+  <!--Views-->
+  <script type="text/javascript" src="javascripts/backbone/view/beerView.js"></script>
+  <script type="text/javascript" src="javascripts/backbone/view/beerCollectionView.js"></script>
+
+</head>
+
+<body>
+
+  <div class="main container">
+    <div class="beers">
+
+      <div class="form-wrapper">
+        <form class="beerForm">
+          <input name="beer-name" type="text" placeholder="...enter a beer">
+        </form>
+      </div><!--form-wrapper-->
+
+      <ul class="beer-list"></ul>
+    </div><!--beers-->
+  </div><!--main container-->

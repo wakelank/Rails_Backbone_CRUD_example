@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 group :development, :test do 
   gem 'pry'
-  gem 'pry-nav'
   gem 'rspec-rails'
   gem 'pry-byebug'
 end
